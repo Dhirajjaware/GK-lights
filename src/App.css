@@ -13,7 +13,9 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Header & Navigation */
@@ -287,13 +289,15 @@ section h2 {
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .contact-info {
-  padding: 2rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .contact-form {
@@ -379,7 +383,7 @@ html {
   }
 
   .contact-container {
-    grid-template-columns: 1fr;
+    padding: 0.5rem;
   }
 
   .about-content {
@@ -499,8 +503,7 @@ html {
   }
 
   .contact-container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    padding: 0.5rem;
   }
 
   .contact-form input,
@@ -529,7 +532,7 @@ html {
 
   /* Container */
   .container {
-    padding: 0 1rem;
+    padding: 0 0.75rem;
   }
 }
 
@@ -603,5 +606,103 @@ html {
 
   .hero-section {
     margin-top: 0;
+  }
+}
+
+.team-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+
+.profile-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  margin-bottom: 0.75rem;
+  border: 3px solid #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-circle h3 {
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.profile-circle p {
+  color: #666;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .team-profiles {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .profile-circle {
+    max-width: 140px;
+  }
+
+  .profile-image {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-profiles {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .profile-circle {
+    max-width: 150px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 0.25rem;
+  }
+
+  .team-profiles {
+    gap: 1rem;
+  }
+
+  .profile-circle {
+    max-width: 130px;
+  }
+
+  .profile-image {
+    width: 90px;
+    height: 90px;
   }
 }

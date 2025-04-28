@@ -162,21 +162,38 @@ function App() {
             <div className="contact-container">
               <div className="contact-info">
                 <h3>Get in Touch</h3>
-                <p>Phone: 9767711480,7350999047</p>
-                <p>Email: [Your Email]</p>
-                <p>Address: [Your Address]</p>
+                <p>
+                  Phone:
+                  <a href="tel:+919767711480"> 9767711480</a>,
+                  <a href="tel:+917350999047"> 7350999047</a>
+                </p>
+
+                <a href="mailto:ganeshshivade58381@gmail.com">
+                  ganeshshivade58381@gmail.com
+                </a>
+
+                <p>Address: Bhoi Galli, Taloda 425413</p>
                 <div className="social-links">
                   {/* Add social media links */}
                 </div>
               </div>
-              <form className="contact-form">
-                <input type="text" placeholder="Name" required />
-                <input type="email" placeholder="Email" required />
-                <input type="text" placeholder="Event Type" required />
-                <input type="date" placeholder="Event Date" required />
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send Message</button>
-              </form>
+              <div className="team-profiles">
+                <div className="profile-circle">
+                  <div className="profile-image"></div>
+                  <h3>Ganesh Shivade</h3>
+                  <p>Owner</p>
+                </div>
+                <div className="profile-circle">
+                  <div className="profile-image"></div>
+                  <h3>Kundan Shivade</h3>
+                  <p>Manager</p>
+                </div>
+                <div className="profile-circle">
+                  <div className="profile-image"></div>
+                  <h3>Soma Johari</h3>
+                  <p>Technical Head</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
