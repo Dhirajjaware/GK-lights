@@ -71,7 +71,7 @@ function App() {
           </div>
         </div>
         <a
-          href="https://wa.me/YOUR_NUMBER"
+          href="https://wa.me/9767711480"
           className="whatsapp-float"
           target="_blank"
           rel="noopener noreferrer"
@@ -173,9 +173,6 @@ function App() {
                 </a>
 
                 <p>Address: Bhoi Galli, Taloda 425413</p>
-                <div className="social-links">
-                  {/* Add social media links */}
-                </div>
               </div>
               <div className="team-profiles">
                 <div className="profile-circle">
@@ -202,7 +199,36 @@ function App() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo">GK Truss</div>
-          <div className="social-links">{/* Add social media links */}</div>
+          <div className="social-links">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/gk_lights_truss_taloda/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </div>
           <p>&copy; 2024 GK Truss. All rights reserved.</p>
         </div>
       </footer>
